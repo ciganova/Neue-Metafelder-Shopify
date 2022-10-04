@@ -1,0 +1,122 @@
+
+
+
+{% assign mazuober = product.selected_or_first_available_variant.metafields.pinfo3.mazuober %}
+{% assign mazufuell = product.selected_or_first_available_variant.metafields.pinfo3.mazufuell %}
+{% assign mazufuett = product.selected_or_first_available_variant.metafields.pinfo3.mazufuett %}
+{% assign kapuze = product.selected_or_first_available_variant.metafields.pinfo3.kapuze %}
+{% assign kragen = product.selected_or_first_available_variant.metafields.pinfo3.kragen %}
+{% assign verschluss = product.selected_or_first_available_variant.metafields.pinfo3.verschluss %}
+{% assign taschen = product.selected_or_first_available_variant.metafields.pinfo3.taschen %}
+{% assign techno = product.selected_or_first_available_variant.metafields.pinfo3.techno %}
+{% assign besondere_merkmale = product.selected_or_first_available_variant.metafields.pinfo3.besondere_merkmale %}
+{% assign pflegehinweis = product.selected_or_first_available_variant.metafields.pinfo3.pflegehinweis %}
+{% assign passform = product.selected_or_first_available_variant.metafields.pinfo3.passform %}
+{% assign groessentext = product.selected_or_first_available_variant.metafields.pinfo3.groessentext %}
+{% assign aermellaenge_ordinaer = product.selected_or_first_available_variant.metafields.pinfo3.aermellaenge_ordinaer %}
+{% assign aermellaenge_cm = product.selected_or_first_available_variant.metafields.pinfo3.aermellaenge_cm %}
+{% assign ruecken_laenge_cm = product.selected_or_first_available_variant.metafields.pinfo3.ruecken_laenge_cm %}
+{% assign model_groesse = product.selected_or_first_available_variant.metafields.pinfo3.model_groesse %}
+
+
+
+<table >
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.mazuober != blank %}
+  <tr>
+    <td ><strong>Obermaterial:</strong></td>
+    <td >{{ mazuober }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.mazufuell != blank %}
+  <tr>
+    <td ><strong>Füllmaterial:</strong></td>
+    <td >{{ mazufuell }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.mazufuett != blank %}
+  <tr>
+    <td ><strong>Futter:</strong></td>
+    <td >{{ mazufuett }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.kapuze != blank %}
+  <tr>
+    <td ><strong>Kapuze:</strong></td>
+    <td >{{ kapuze }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.kragen != blank %}
+  <tr>
+    <td ><strong>Kragen/Ausschnit:</strong></td>
+    <td >{{ kragen }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.verschluss != blank %}
+  <tr>
+    <td ><strong>Verschluss:</strong></td>
+    <td >{{ verschluss }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.taschen != blank %}
+  <tr>
+    <td ><strong>Taschen:</strong></td>
+    <td >{{ taschen }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.techno != blank %}
+  <tr>
+    <td ><strong>Technologie:</strong></td>
+    <td >{{ techno }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.besondere_merkmale != blank %}
+  <tr>
+    <td ><strong>Merkmale:</strong></td>
+    <td >{{ besondere_merkmale }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.pflegehinweis != blank %}
+  <tr>
+    <td ><strong>Pflegehinweis:</strong></td>
+    <td >{{ pflegehinweis }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.passform != blank %}
+  <tr>
+    <td ><strong>Passform:</strong></td>
+    <td >{{ passform }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.groessentext != blank %}
+  <tr>
+    <td ><strong>Größenhinweis:</strong></td>
+    <td >{{ groessentext }}</td>
+  </tr>
+  {% endif %}
+
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.aermellaenge_ordinaer != blank %}
+  <tr>
+    <td ><strong>Ärmel:</strong></td>
+    <td >{{ aermellaenge_ordinaer }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.aermellaenge_cm != blank %}
+  <tr>
+    <td ><strong>Ärmel (cm):</strong></td>
+    <td >{{ aermellaenge_cm }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.ruecken_laenge_cm != blank %}
+  <tr>
+    <td ><strong>Rückenlänge (cm):</strong></td>
+    <td >{{ ruecken_laenge_cm }}</td>
+  </tr>
+  {% endif %}
+  {% if product.selected_or_first_available_variant.metafields.pinfo3.model_groesse != blank %}
+  <tr>
+    <td ><strong>:</strong></td>
+    <td >{{ model_groesse }}</td>
+  </tr>
+  {% endif %}
+</table>
+</div>
